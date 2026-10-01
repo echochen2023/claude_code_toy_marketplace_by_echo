@@ -1,0 +1,1 @@
+-- not working: even if profiles records are created, we cannot have records pre-created in the auth.users table because it is owned by supabase email authentication flow. 

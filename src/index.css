@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orator+Std:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Marketplace Design System - Mobile-first used product marketplace */
+
+@layer base {
+  :root {
+    /* Marketplace Brand Colors */
+    --marketplace-bg: 32 23% 96%;          /* #f8f4f1 */
+    --marketplace-blue: 194 57% 51%;        /* #3CA4C7 - RGB(60,164,199) */
+    --marketplace-dark: 0 0% 27%;           /* #444444 */
+    --marketplace-white: 0 0% 100%;         /* #ffffff */
+    
+    /* Semantic Design Tokens */
+    --background: var(--marketplace-bg);
+    --foreground: var(--marketplace-blue);
+    --primary: var(--marketplace-blue);
+    --primary-foreground: var(--marketplace-white);
+    --secondary: var(--marketplace-dark);
+    --secondary-foreground: var(--marketplace-blue);
+    --muted: var(--marketplace-bg);
+    --muted-foreground: var(--marketplace-blue);
+    --accent: var(--marketplace-blue);
+    --accent-foreground: var(--marketplace-white);
+    --border: var(--marketplace-blue);
+    --input: var(--marketplace-bg);
+    --ring: var(--marketplace-blue);
+    --destructive: 0 84% 60%;
+    --destructive-foreground: var(--marketplace-white);
+    --card: var(--marketplace-bg);
+    --card-foreground: var(--marketplace-blue);
+    --popover: var(--marketplace-bg);
+    --popover-foreground: var(--marketplace-blue);
+    
+    /* Spacing & Layout */
+    --radius: 1.375rem; /* 22px */
+    --nav-height: 4rem; /* 64px */
+    --button-height: 3.375rem; /* 54px */
+    --avatar-size: 2rem; /* 32px */
+    --icon-size: 1.5rem; /* 24px */
+    --page-padding: 1rem; /* 16px */
+    --icon-spacing: 0.75rem; /* 12px */
+  }
+
+  .dark {
+    --background: var(--marketplace-bg);
+    --foreground: var(--marketplace-blue);
+    --primary: var(--marketplace-blue);
+    --primary-foreground: var(--marketplace-white);
+    --secondary: var(--marketplace-dark);
+    --secondary-foreground: var(--marketplace-blue);
+    --muted: var(--marketplace-bg);
+    --muted-foreground: var(--marketplace-blue);
+    --accent: var(--marketplace-blue);
+    --accent-foreground: var(--marketplace-white);
+    --border: var(--marketplace-blue);
+    --input: var(--marketplace-bg);
+    --ring: var(--marketplace-blue);
+    --destructive: 0 84% 60%;
+    --destructive-foreground: var(--marketplace-white);
+    --card: var(--marketplace-bg);
+    --card-foreground: var(--marketplace-blue);
+    --popover: var(--marketplace-bg);
+    --popover-foreground: var(--marketplace-blue);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-medium;
+    font-family: 'Orator Std', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+
+  /* Mobile-first typography */
+  .text-display {
+    @apply text-lg font-medium text-foreground; /* 18-20px */
+  }
+  
+  .text-caption {
+    @apply text-sm font-medium text-foreground; /* 14-16px */
+  }
+  
+  .text-body {
+    @apply text-base font-medium text-foreground;
+  }
+}
