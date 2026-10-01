@@ -25,7 +25,7 @@ in the background on port 8080. Check that both are up:
 
 ```bash
 docker ps --format '{{.Names}}' | grep -c "_aonhrhzuntjkskglqdwv"    # > 0: Supabase containers running
-curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080/claude_code_toy_marketplace/   # 200
+curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080/claude_code_toy_marketplace_by_echo/   # 200
 ```
 
 Stop everything with **`/stop_project`** (keeps local data).
@@ -80,7 +80,7 @@ docker exec -i supabase_db_aonhrhzuntjkskglqdwv psql -U postgres -d postgres -At
 
 ## Run (human path)
 
-Open http://localhost:8080/claude_code_toy_marketplace/ in a browser and sign in normally.
+Open http://localhost:8080/claude_code_toy_marketplace_by_echo/ in a browser and sign in normally.
 
 ## Test / lint
 

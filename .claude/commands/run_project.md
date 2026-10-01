@@ -14,9 +14,9 @@ Start the whole local environment for this project. Run every command from the r
 4. **Dev server.** Check `lsof -i :8080 -sTCP:LISTEN`.
    - If something is already listening, report that and don't start a second one.
    - Otherwise run `npm run dev` with the Bash tool's `run_in_background: true` and `timeout: 7200000` (the 2-hour maximum; without it the background task is killed after the 30-minute default).
-   - Poll `curl -s -o /dev/null -w "%{http_code}" http://localhost:8080/claude_code_toy_marketplace/` (up to ~15 tries, 1 s apart) until it returns 200.
+   - Poll `curl -s -o /dev/null -w "%{http_code}" http://localhost:8080/claude_code_toy_marketplace_by_echo/` (up to ~15 tries, 1 s apart) until it returns 200.
 5. **Report.** Show a short summary:
-   - the app URL: `http://localhost:8080/claude_code_toy_marketplace/`
+   - the app URL: `http://localhost:8080/claude_code_toy_marketplace_by_echo/`
    - Supabase Studio: `http://127.0.0.1:54323`
    - the background task ID of the dev server, so `/stop_project` can stop it.
 

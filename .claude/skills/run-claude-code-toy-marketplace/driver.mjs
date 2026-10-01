@@ -10,7 +10,7 @@ import { execSync } from "node:child_process";
 import { mkdirSync } from "node:fs";
 import readline from "node:readline";
 
-const APP = process.env.APP_URL ?? "http://localhost:8080/claude_code_toy_marketplace";
+const APP = process.env.APP_URL ?? "http://localhost:8080/claude_code_toy_marketplace_by_echo";
 const SUPABASE = process.env.SUPABASE_URL ?? "http://127.0.0.1:54321";
 const SHOTS = process.env.SHOTS_DIR ?? "/tmp/toy-marketplace-shots";
 const TIMEOUT = 15000;

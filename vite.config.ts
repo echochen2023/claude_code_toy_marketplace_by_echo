@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/claude_code_toy_marketplace/',
+  base: '/claude_code_toy_marketplace_by_echo/',
   server: {
     host: "::",
     port: 8080,
